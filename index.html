@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Guessing Game</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<h2>The great <span id="title-rgb">rgb(255, 255, 255)</span> guessing game</h2>
+	</div>
+</header>
+
+<nav>
+	<div class="container">
+		<ul class="game-nav" id="newGame">
+			<li>New colors</li>
+		</ul>	
+		<ul id='info' class="game-nav">
+		</ul>	
+		<ul class="game-nav" id="right">
+			<li id="easy">Easy</li><li class="active" id="hard">Hard</li>
+		</ul>	
+	</div>
+</nav>
+
+<div class="clearfix"></div>
+
+<section>
+	<div class="container">
+		<div class="color" id='color1'></div>	
+		<div class="color" id='color2'></div>	
+		<div class="color" id='color3'></div>	
+		<div class="color" id='color4'></div>	
+		<div class="color" id='color5'></div>	
+		<div class="color" id='color6'></div>	
+	</div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

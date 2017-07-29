@@ -1,0 +1,137 @@
+/* COLORS:
+	Header: #33658A;
+	Light-background: #C5D1EB;
+	Dark-background: #131F2b;
+	White / black?
+
+*/
+
+
+/* INITIALIZING */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;	
+	font-size: 10px;
+}
+
+body {
+	background-color: #131F2B;
+}
+
+.container {
+	text-align: center;
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 75%;
+}
+
+header {
+	background-color: #33658A;
+	padding: 20px;
+	color: white;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+
+#title-rgb {
+	font-size: 2em;
+	display: block;
+	line-height: 1;
+}
+
+nav {
+	background: white;
+	overflow: hidden;
+	height: 34px;
+}
+
+.game-nav {
+	color: #33658A;
+	list-style: none;
+	display: inline-block;
+	overflow: hidden;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	cursor: pointer;
+}
+
+.game-nav li {
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 7px;
+	line-height: 1;
+	transition: 0.2s;
+}
+
+.active, .game-nav li:hover {
+	background-color: #33658A;
+	color: white;
+	transition: 0.2s;
+}
+
+#newGame {
+	float: left;
+}
+
+#right {
+	float: right;
+}
+
+#info {
+	cursor: auto;
+	font-size: 2rem;
+	line-height: 34px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+section {
+	margin-top: 20px;
+}
+
+.color {
+	display: inline-block;
+	padding: 0 30% 30% 0;
+	margin: 1.3%;
+	background: red;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.hidden {
+	transition: 0.4s;
+	display: none;
+}
+
+.hide {
+	background-color: #131F2B !important;
+}
+
+@media (max-width: 600px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	.game-nav li, #info {
+		font-size: 1.5rem;
+	}
+
+	#info {
+		line-height: 29px;
+	}
+
+	nav {
+		height: 29px;
+	}
+}
