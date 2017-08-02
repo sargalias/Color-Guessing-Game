@@ -101,9 +101,20 @@ function startGame() {
 	changeHeaderTitle();
 	changeHeaderBackground('#33658A')
 	document.querySelector('#newGame li').textContent = 'New colors';
+	document.getElementById('info').textContent = ''
 	var colors = generateColors(NUMBOXES);
 	console.log('colors from gameloop: ' + colors);
 	applyColors(colors);
+	unHideBoxes();
+}
+
+function unHideBoxes() {
+	// unhide all boxes.
+	var divs = document.getElementsByClassName('color');	
+	for (var i=0; i<NUMBOXES; i++) {
+		divs[i].classList.remove('hide');
+	}
+
 }
 
 function finishGame() {
@@ -113,18 +124,14 @@ function finishGame() {
 	// change menu option
 	document.querySelector('#newGame li').textContent = 'Play again?';
 
+
 	// change box backgrounds
 	var colors = [];
 	for (var i=0; i<NUMBOXES; i++) {
 		colors.push(ANSWER);
 	}
 	applyColors(colors);
-
-	// unhide all boxes.
-	var divs = document.getElementsByClassName('color');	
-	for (var i=0; i<NUMBOXES; i++) {
-		divs[i].classList.remove('hide');
-	}
+	unHideBoxes();
 }
 
 function game() {
