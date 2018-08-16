@@ -1,0 +1,23 @@
+{
+  "name": "color-guessing-game",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sargalias/color-guessing-game"
+  },
+  "author": "Spyros Argalias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sargalias/color-guessing-game/issues"
+  },
+  "homepage": "https://github.com/sargalias/color-guessing-game#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "description": ""
+}
